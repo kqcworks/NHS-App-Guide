@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHS App Setup Guide — No Photo ID</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1a1a2e;
+    padding: 24px 16px;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  header {
+    background: #005eb8;
+    color: #fff;
+    border-radius: 12px;
+    padding: 28px 32px 24px;
+    margin-bottom: 24px;
+  }
+  header h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; }
+  header p  { font-size: 14px; opacity: 0.85; }
+  .badge {
+    display: inline-block;
+    background: #ffffff22;
+    border: 1px solid #ffffff44;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 3px 12px;
+    margin-top: 12px;
+  }
+  .phase-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #6b7280;
+    text-transform: uppercase;
+    margin: 28px 0 10px;
+    padding-left: 4px;
+  }
+  .step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #005eb8;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+  }
+  .step.nhs    { border-left-color: #007f3b; }
+  .step.action { border-left-color: #4c3d99; }
+  .step-num {
+    min-width: 32px; height: 32px;
+    border-radius: 50%;
+    background: #005eb8;
+    color: #fff;
+    font-size: 14px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .step.nhs    .step-num { background: #007f3b; }
+  .step.action .step-num { background: #4c3d99; }
+  .step-body h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .step-body p  { font-size: 13px; color: #4b5563; line-height: 1.55; }
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .split .step { margin-bottom: 0; }
+  .split-label {
+    text-align: center;
+    font-size: 12px;
+    color: #9ca3af;
+    margin: -4px 0 8px;
+    font-style: italic;
+  }
+  .arrow {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 20px;
+    margin: 4px 0;
+    line-height: 1;
+  }
+  .tip {
+    background: #fffbeb;
+    border: 1px dashed #f59e0b;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #78350f;
+    line-height: 1.6;
+  }
+  .tip strong { display: block; margin-bottom: 4px; font-size: 13px; }
+  .legend {
+    display: flex; gap: 20px; flex-wrap: wrap;
+    font-size: 12px; color: #6b7280;
+    margin-bottom: 20px;
+    padding: 10px 14px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+  }
+  .legend span { display: flex; align-items: center; gap: 6px; }
+  .legend i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+  footer {
+    text-align: center;
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .step { box-shadow: none; border: 1px solid #e5e7eb; }
+  }
+  @media (max-width: 520px) {
+    .split { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Registering with your GP &amp; activating the NHS App</h1>
+  <p>A step-by-step guide for patients — no photo ID required</p>
+  <span class="badge">&#128274; No photo ID needed</span>
+</header>
+
+<div class="legend">
+  <span><i style="background:#005eb8"></i> GP surgery step</span>
+  <span><i style="background:#007f3b"></i> NHS App step</span>
+  <span><i style="background:#4c3d99"></i> Your action</span>
+</div>
+
+<div class="phase-label">Phase 1 — Get online access from your GP</div>
+
+<div class="step">
+  <div class="step-num">1</div>
+  <div class="step-body">
+    <h3>Contact your GP surgery</h3>
+    <p>Call, visit in person, or send an email and ask to be registered for <strong>online services</strong>. This is a standard request — any receptionist will know what you mean.</p>
+  </div>
+</div>
+
+<div class="arrow">&#8595;</div>
+
+<div class="step">
+  <div class="step-num">2</div>
+  <div class="step-body">
+    <h3>Verify your identity with the GP</h3>
+    <p>The surgery will confirm you are a registered patient. <strong>No photo ID is required for this step.</strong> They may ask a few security questions (date of birth, address, NHS number if you have it).</p>
+  </div>
+</div>
+
+<div class="arrow">&#8595;</div>
+
+<div class="step action">
+  <div class="step-num">3</div>
+  <div class="step-body">
+    <h3>Receive your linkage details — keep these safe!</h3>
+    <p>The surgery will give you three pieces of information, on paper or by email:</p>
+    <p style="margin-top:8px">
+      &#9679; <strong>Linkage key</strong> (also called a passphrase)<br>
+      &#9679; <strong>ODS code</strong> (your surgery's unique code)<br>
+      &#9679; <strong>Account ID</strong>
+    </p>
+    <p style="margin-top:8px">You will need all three in Step 6. Store them somewhere safe.</p>
+  </div>
+</div>
+
+<div class="phase-label">Phase 2 — Set up the NHS App</div>
+
+<div class="step nhs">
+  <div class="step-num">4</div>
+  <div class="step-body">
+    <h3>Download the NHS App &amp; create an NHS login</h3>
+    <p>Search for <strong>"NHS App"</strong> on the App Store (iPhone) or Google Play (Android). Install it, then tap <em>Create an NHS login</em> and register with your email address.</p>
+  </div>
+</div>
+
+<div class="arrow">&#8595;</div>
+
+<div class="split-label">Step 5 — verify your identity: choose one route</div>
+<div class="split">
+  <div class="step nhs" style="border-left-color:#007f3b">
+    <div class="step-num" style="background:#007f3b; font-size:12px">5a</div>
+    <div class="step-body">
+      <h3>No photo ID route &#10003;</h3>
+      <p>Answer security questions online based on your personal details, or use a <strong>face scan</strong> (biometrics) via your phone camera. No documents needed.</p>
+    </div>
+  </div>
+  <div class="step nhs" style="border-left-color:#6b7280">
+    <div class="step-num" style="background:#6b7280; font-size:12px">5b</div>
+    <div class="step-body">
+      <h3>With photo ID (optional)</h3>
+      <p>If you do have a passport or driving licence, you can scan it in the app to verify faster.</p>
+    </div>
+  </div>
+</div>
+
+<div class="arrow">&#8595;</div>
+
+<div class="step nhs">
+  <div class="step-num">6</div>
+  <div class="step-body">
+    <h3>Link your GP surgery in the app</h3>
+    <p>Go to <em>Your health &gt; Connect your GP</em> inside the NHS App. Enter the <strong>linkage key, ODS code, and account ID</strong> you received in Step 3.</p>
+  </div>
+</div>
+
+<div class="arrow">&#8595;</div>
+
+<div class="step nhs" style="border-left-color:#007f3b; background: #f0fdf4;">
+  <div class="step-num" style="background:#007f3b">7</div>
+  <div class="step-body">
+    <h3>You're in! &#127881;</h3>
+    <p>You can now book appointments, order repeat prescriptions, view your medical records, and see test results — all from your phone.</p>
+  </div>
+</div>
+
+<div class="tip">
+  <strong>&#128222; If the no-ID route fails:</strong>
+  Call <strong>NHS login support on 0300 303 5678</strong>. They can verify your identity manually over the phone — no photo ID required for this either. Lines are open Monday–Friday.
+</div>
+
+<footer>
+  NHS App Setup Guide &mdash; No Photo ID &bull; For patients and social prescribers &bull; Information correct as of 2025
+</footer>
+
+</body>
+</html>
